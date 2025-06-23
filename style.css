@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri';
+}
+
+html, body{
+    height: 100%;
+}
+
+/* Início da estilização da página de login */
+
+.loginpage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #08749c, #27b6d2);
+}
+
+.secao{
+    display: flex;
+    background-color: white;
+    height: auto;
+    width:fit-content;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 10px;
+    color:grey;
+    justify-content: left;
+}
+.secao .line{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: rgb(244, 242, 242);
+    height: 50%;
+    border-radius: 10px;
+}
+.secao h1{
+  background-image: linear-gradient(to bottom,#065a78, #189ab4);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+  padding-right: 150px;
+  padding-left: 150px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 50px;
+}
+
+.texto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left: 15px;
+    
+}
+.texto form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.texto form label{
+    margin-top: 30px;
+}
+.texto form label:first-of-type {
+    margin-top: 15px;
+}
+.texto form input{
+    width: 80%;
+    border-radius: 2px;
+    border: 1px solid;
+    border-color:  rgb(203, 203, 203);
+    color:grey;
+    height: 40px;
+    padding-left: 5px;
+    font-size: 16px;
+}
+
+.texto form span{
+    margin-top: 10px;
+    text-decoration: underline;
+}
+.texto form button{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    width: 34%;
+    color: azure;
+    font-size: 16px;
+    font-weight: bold;
+    background: #189ab4;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.texto form button:hover{
+    background-color:#065a78
+}
+
+#acessFail{
+    display: none;
+    color: rgb(246, 56, 56);
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Fim da estilização da página de login */
+
+/* Início da estilização da home page*/
+.homepage{
+    display: flex;
+}
+aside{
+    border: 1px solid;
+    padding: 15px;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Suits Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    #search {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      width: 200px;
+    }
+
+    .card h3 {
+      margin: 0 0 10px 0;
+      color: #08749c;
+    }
+
+    .card p {
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Suits Dashboard</h1>
+  <input type="text" id="search" placeholder="Search by name...">
+
+  <div class="container" id="suitContainer"></div>
+
+  <script>
+    const suits = [
+      { name: "Classic Black", number: "001", price: "499" },
+      { name: "Modern Grey", number: "002", price: "599" },
+      { name: "Navy Blue", number: "003", price: "549" },
+      { name: "Slim Fit Beige", number: "004", price: "479" }
+    ];
+
+    const container = document.getElementById("suitContainer");
+
+    function renderSuits(list) {
+      container.innerHTML = '';
+      list.forEach(suit => {
+        const div = document.createElement("div");
+        div.className = "card";
+        div.innerHTML = `
+          <h3>${suit.name}</h3>
+          <p><strong>Number:</strong> ${suit.number}</p>
+          <p><strong>Price:</strong> $${suit.price}</p>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    // Initial render
+    renderSuits(suits);
+
+    // Filter by name
+    document.getElementById("search").addEventListener("input", function() {
+      const query = this.value.toLowerCase();
+      const filtered = suits.filter(s => s.name.toLowerCase().includes(query));
+      renderSuits(filtered);
+    });
+  </script>
+
+</body>
+</html>
