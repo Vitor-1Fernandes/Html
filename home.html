@@ -7,9 +7,67 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="homepage">
-    <aside>
-        <section><img href="assets/corinthians.png"> Corinthians logo</section>
-    </aside>
-
+    <nav class="nav1">
+        <p>Inventário [02.09.004]</p>
+    </nav>
+    <nav class="nav2">
+        <h2> TOTVS | ESTOQUE/CUSTOS </h2>
+    </nav>
+    <nav class="nav3">
+        <h3>Digitação do Inventário - INCLUIR </h3>
+    </nav>
+    <main>
+        <div class="faixa1">
+        <label>Produto *</label>
+        <input name='produto' type="text" placeholder="Código do produto">
+        <div class="faixadupla">
+        <div class="faixadupla1">
+        <label>Quantidade</label>
+        <label>Qtd 2a UM</label>
+        </div>
+        <input name='qtd' type="text" placeholder="0,00">
+        <input name='qtd' type="text" placeholder="0,00">
+        </div>
+        <div class="faixadupla">
+        <div class="faixadupla2">
+        <label>Lote</label>
+        <label>Sub-Lote</label>
+        </div>
+        <input name='lote' type="text" placeholder="">
+        <input name='lote' type="text" placeholder="">
+        </div>
+        <label>Num de série</label>
+        <input name='numSerie' type="text" placeholder="">
+        <label>Status</label>
+        <select name='status' disabled>
+        <option selected> 1 - Nao processado</option>
+        </select>
+        </div>
+        <div class="faixa2">
+        <label>Armazem *</label>
+        <input name='produto' type="text" placeholder="Código do produto">
+         <label>Invent em</label>
+        <input name='qtd' type="date" placeholder="0,00">
+        <label>Data validad</label>
+        <input name='lote' type="date" placeholder="">
+        <label>Estr fisica</label>
+        <input name='numSerie' type="text" placeholder="">
+        <label>ID unitz</label>
+        <input name='numSerie' type="text" placeholder="">
+        </div>
+        <div class="faixa3">
+        <label>Tp Material</label>
+        <input name='produto' type="text" placeholder="Código do produto">
+         <label>Descricao</label>
+        <input name='qtd' type="text" placeholder="0,00">
+        <label>Endereco</label>
+        <input name='lote' type="text" placeholder="">
+        <label>Contagem</label>
+        <input name='numSerie' type="text" placeholder="">
+        <label>Sid Terceiro</label>
+        <input name='numSerie' type="text" placeholder="">
+        </div>
+      
+    </main>
 </body>
 </html>
