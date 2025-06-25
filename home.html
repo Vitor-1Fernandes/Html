@@ -14,12 +14,12 @@
         <h2> TOTVS | ESTOQUE/CUSTOS </h2>
     </nav>
     <nav class="nav3">
-        <h3>Digitação do Inventário - INCLUIR </h3>
+        <h3>Digitação do Inventário - INCLUIR</h3><div><button class="button2">Cancelar</button><button class="button1">Salvar</button></div>
     </nav>
     <main>
         <div class="faixa1">
         <label>Produto *</label>
-        <input name='produto' type="text" placeholder="Código do produto">
+        <input id="input1" name='produto' type="text" placeholder="Código do produto">
         <div class="faixadupla">
         <div class="faixadupla1">
         <label>Quantidade</label>
@@ -31,10 +31,10 @@
         <div class="faixadupla">
         <div class="faixadupla2">
         <label>Lote</label>
-        <label>Sub-Lote</label>
+        <label class="lote">Sub-Lote</label>
         </div>
         <input name='lote' type="text" placeholder="">
-        <input name='lote' type="text" placeholder="">
+        <input id="input2" name='lote' type="text" placeholder="">
         </div>
         <label>Num de série</label>
         <input name='numSerie' type="text" placeholder="">
@@ -45,27 +45,33 @@
         </div>
         <div class="faixa2">
         <label>Armazem *</label>
-        <input name='produto' type="text" placeholder="Código do produto">
+        <input id="input3" name='produto' type="text" placeholder="Código do produto">
          <label>Invent em</label>
         <input name='qtd' type="date" placeholder="0,00">
         <label>Data validad</label>
         <input name='lote' type="date" placeholder="">
         <label>Estr fisica</label>
-        <input name='numSerie' type="text" placeholder="">
+        <input id="input4" name='numSerie' type="text" placeholder="">
         <label>ID unitz</label>
-        <input name='numSerie' type="text" placeholder="">
+        <input id="input5" name='numSerie' type="text" placeholder="">
         </div>
         <div class="faixa3">
+        <div class="faixadupla">
+        <div class="faixadupla2">
         <label>Tp Material</label>
-        <input name='produto' type="text" placeholder="Código do produto">
+        <label id="documento">Documento</label>
+        </div>
+        <input id="input10" name='lote' type="text" placeholder="PA">
+        <input id="input11" name='lote' type="text" placeholder="00000000-X">
+        </div>
          <label>Descricao</label>
-        <input name='qtd' type="text" placeholder="0,00">
+        <input id="input7" name='qtd' type="text" placeholder="0,00">
         <label>Endereco</label>
-        <input name='lote' type="text" placeholder="">
+        <input id="input8" name='lote' type="text" placeholder="">
         <label>Contagem</label>
-        <input name='numSerie' type="text" placeholder="">
+        <input id="input9" name='numSerie' type="text" placeholder="">
         <label>Sid Terceiro</label>
-        <input name='numSerie' type="text" placeholder="">
+        <input id="input9" name='numSerie' type="text" placeholder="">
         </div>
       
     </main>
