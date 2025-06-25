@@ -52,4 +52,7 @@ pyautogui.write("1")
 clicar(5, 'tab')
 pyautogui.write("03")
 
+clicar(10, 'tab')
+pyautogui.write("45788")
+
 
