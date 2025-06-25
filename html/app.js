@@ -7,7 +7,7 @@ entrarClick.addEventListener('click', function(event){
     let errata = document.getElementById('acessFail'); 
 
     if (login == 'admin' && senha == 'sccp@1910'){
-    window.location.href = 'home.html'}
+    window.location.href = 'html/home.html'}
     else{
         errata.style.display = 'flex';
     }
